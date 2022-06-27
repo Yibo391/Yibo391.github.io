@@ -1,0 +1,31 @@
+.header{
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+.banner{
+    background-color: #dfdfdf;
+    height: 100px;
+    display: flex;
+    
+}
+a{
+    text-decoration: none;
+    text
+}
+li{
+    list-style-type: none;
+    
+}
+.banner li{
+    padding-left: 10em;
+    font-size: 20px;
+    color: orange;
+
+}
+a:link {
+    color: orange;
+}
+a:hover{
+    background: yellow;
+}
