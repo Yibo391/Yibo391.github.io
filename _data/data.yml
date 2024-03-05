@@ -8,19 +8,19 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Alan Doe
+    name: Yibo Wang
     tagline: Full Stack Developer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
-    timezone: America/Cancun Timezone
+    email: wyibo00@outlook.com
+    phone: +49 17685939823
+    timezone: CE
     citizenship:
     website: blog.webjeda.com #do not add http://
     linkedin: alandoe
     xing: alandoe
-    github: sharu725
+    github: Yibo391
     telegram: # add your nickname without '@' sign
     gitlab:
     bitbucket:
@@ -34,24 +34,22 @@ sidebar:
       title: Languages
       info:
         - idiom: English
+          level: Professional
+
+        - idiom: Chinese
           level: Native
 
-        - idiom: French
-          level: Professional
-
-        - idiom: Spanish
-          level: Professional
 
     interests:
       title: Interests
       info:
-        - item: Climbing
+        - item: FPS games(CS2/ Valorant)
           link:
 
-        - item: Snowboarding
+        - item: Bizarre Science Facts 
           link:
 
-        - item: Cooking
+        - item: Leetcode
           link:
 
 career-profile:
@@ -77,17 +75,11 @@ education:
           pretium quis, sem.
             - Bullet point
             - Bullet point
-      - degree: BSc in Applied Mathematics
-        university: Bristol University
-        time: 2007 - 2011
+      - degree: BSc in Software Technology
+        university: Linnaeus University
+        time: 2020 - 2023
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          At Linnaeus University, I acquired a solid foundation in Computer Science, covering essential areas such as object-oriented programming, databases, front-end and back-end development, and software testing. This diverse curriculum has equipped me with the practical skills and theoretical knowledge necessary to excel in the tech industry, fostering my ability to develop robust, scalable software solutions and contribute effectively to multidisciplinary teams.
 
 experiences:
     title: Experiences
