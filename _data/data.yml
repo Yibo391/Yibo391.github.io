@@ -65,16 +65,16 @@ education:
     title: Education
     info:
       - degree: MSc in Computer Science
-        university: University of London
-        time: 2011 - 2012
+        university: Technische Universität Darmstadt
+        time: 2023 - present
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          Specialization in Artificial Intelligence at TU Darmstadt focuses on advanced courses in Natural Language Processing (NLP), Computer Vision, and Reinforcement Learning. This specialized curriculum deepens understanding of AI technologies, enabling the design and implementation of intelligent systems capable of analyzing and interpreting human language, recognizing and processing visual information, and making decisions to achieve specific goals through learning and adaptation.
+
+
+
+
+
+
       - degree: BSc in Software Technology
         university: Linnaeus University
         time: 2020 - 2023
