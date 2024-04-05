@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './WeatherWidget.css'; // Import custom CSS for animations
-import .meta.env.VITE_WEATHER_API_KE
+
 const WeatherWidget = () => {
   const [weather, setWeather] = useState(null);
+  // Correctly access the API key stored in an environment variable
   const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
   useEffect(() => {
@@ -19,7 +20,8 @@ const WeatherWidget = () => {
     }
 
     async function fetchWeather(lat, lon) {
-      const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}&aqi=no`;
+      // Ensure the URL uses HTTPS
+      const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}&aqi=no`;
       try {
         const response = await fetch(url);
         const data = await response.json();
@@ -28,7 +30,7 @@ const WeatherWidget = () => {
         console.error("Failed to fetch weather data:", error);
       }
     }
-  }, [apiKey]);
+  }, [apiKey]); // Dependency array ensures useEffect runs when apiKey changes
 
   if (!weather) return <p>Loading weather...</p>;
 
@@ -40,7 +42,8 @@ const WeatherWidget = () => {
         <p className="card-text">
           <strong>Temperature:</strong> {weather.current.temp_c}°C<br/>
           <strong>Condition:</strong> {weather.current.condition.text}<br/>
-          <img src={weather.current.condition.icon} alt="weather icon" />
+          {/* Ensure icons are loaded over HTTPS */}
+          <img src={weather.current.condition.icon.startsWith('//') ? 'https:' + weather.current.condition.icon : weather.current.condition.icon} alt="weather icon" />
         </p>
       </div>
     </div>
