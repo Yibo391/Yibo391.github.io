@@ -50,9 +50,3 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         
-
-      - name: Debug environment variables
-        run: echo "Node version is $NODE_VERSION"
-        env:
-        NODE_VERSION: ${{ secrets.NODE_VERSION }}
-
