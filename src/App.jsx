@@ -1,30 +1,12 @@
-import React, { useState } from 'react';
-
+import WeatherWidget from './WeatherWidget';
+import './main.css'; // Assuming you have or will create this for additional custom styles
+import Footer from './Footer'
 function App() {
-  const [items, setItems] = useState([]);
-  const [inputValue, setInputValue] = useState("");
-
-  const addItem = () => {
-    if (!inputValue.trim()) return; // Prevent adding empty items
-    setItems([...items, inputValue]);
-    setInputValue(""); // Clear input after adding
-  };
-
   return (
-    <div>
-      <h1>Hello, welcome to my React app!</h1>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Add an item"
-      />
-      <button onClick={addItem}>Add Item</button>
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+    <div className="App text-center mt-4">
+      <h1 className="app-title mb-4">Live Weather Conditions</h1>
+      <WeatherWidget />
+      <Footer/>
     </div>
   );
 }

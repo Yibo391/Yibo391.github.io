@@ -1,0 +1,60 @@
+/* Ensure html and body elements take up the full height of the viewport */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Set up the main .App container to use flexbox and grow to fill available space */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Use Viewport Height (vh) to ensure it fills the screen */
+}
+
+/* Additional styles for the footer if it's not already centered and styled */
+.footer {
+    margin-top: auto;
+    /* Pushes the footer to the bottom */
+    background-color: #f5f5f5;
+    /* Example background color */
+    padding: 0;
+    /* Example padding */
+}
+
+/* Your existing styles */
+
+
+
+/* App.css */
+.app-title {
+    color: #007bff;
+    /* Bootstrap primary blue, for consistency */
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+}
+
+/* Additional styles for your App can go here */
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    /* Keeps the element in the final state after animation completes */
+}
+
+/* Additional styling for the footer if needed */
