@@ -58,3 +58,28 @@ body {
 }
 
 /* Additional styling for the footer if needed */
+
+
+
+
+/* Example custom styles for the carousel */
+.carousel {
+    max-width: 600px; /* Adjust based on your needs */
+    margin: auto; /* Center the carousel */
+  }
+  
+  .carousel-item img {
+    height: 400px; /* Adjust based on your needs */
+    object-fit: cover; /* Ensure photos cover the slide area without distortion */
+    width: 100%; /* Ensure images stretch to the full width of the carousel item */
+    transition: none; /* Disable transitions */
+    transform: none; /* Disable transformations */
+  }
+  
+
+  .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  
+
