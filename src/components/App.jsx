@@ -7,7 +7,7 @@ import Footer from './Footer';
 import TodoList from './TodoList';
 import Calculator from './Calculator';
 import '../styles/main.css';
-
+import '../i18n'
 const Layout = ({ children }) => (
     <div className="d-flex flex-column min-vh-100">
         <NavBar />
