@@ -1,37 +1,39 @@
 import React, { useState, useEffect } from 'react';
-import './WeatherWidget.css'; // Import custom CSS for animations
+import '../styles/WeatherWidget.css'; // Correct path to CSS file in styles directory
 
 const WeatherWidget = () => {
   const [weather, setWeather] = useState(null);
-  // Correctly access the API key stored in an environment variable
+  const [error, setError] = useState('');
   const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(success, error);
+    navigator.geolocation.getCurrentPosition(success, handleError);
 
     function success(position) {
       const { latitude, longitude } = position.coords;
       fetchWeather(latitude, longitude);
     }
 
-    function error() {
-      // User denied geolocation, or it's not available; use default location (Frankfurt am Main)
-      fetchWeather(50.1109, 8.6821);
+    function handleError() {
+      setError('Failed to retrieve your location. Using default location.');
+      fetchWeather(50.1109, 8.6821); // Frankfurt as default
     }
 
     async function fetchWeather(lat, lon) {
-      // Ensure the URL uses HTTPS
       const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}&aqi=no`;
       try {
         const response = await fetch(url);
+        if (!response.ok) throw new Error('Network response was not ok.');
         const data = await response.json();
         setWeather(data);
       } catch (error) {
         console.error("Failed to fetch weather data:", error);
+        setError('Failed to load weather data.');
       }
     }
-  }, [apiKey]); // Dependency array ensures useEffect runs when apiKey changes
+  }, [apiKey]);
 
+  if (error) return <p>{error}</p>;
   if (!weather) return <p>Loading weather...</p>;
 
   return (
@@ -42,7 +44,6 @@ const WeatherWidget = () => {
         <p className="card-text">
           <strong>Temperature:</strong> {weather.current.temp_c}°C<br/>
           <strong>Condition:</strong> {weather.current.condition.text}<br/>
-          {/* Ensure icons are loaded over HTTPS */}
           <img src={weather.current.condition.icon.startsWith('//') ? 'https:' + weather.current.condition.icon : weather.current.condition.icon} alt="weather icon" />
         </p>
       </div>

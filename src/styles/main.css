@@ -5,6 +5,14 @@ body {
     margin: 0;
 }
 
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+
 /* Set up the main .App container to use flexbox and grow to fill available space */
 .App {
     display: flex;
@@ -15,13 +23,11 @@ body {
 
 /* Additional styles for the footer if it's not already centered and styled */
 .footer {
-    margin-top: auto;
-    /* Pushes the footer to the bottom */
-    background-color: #f5f5f5;
-    /* Example background color */
-    padding: 0;
-    /* Example padding */
-}
+    margin-top: auto; /* Push the footer to the bottom of the layout */
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 20px 0; /* Padding for aesthetic spacing */
+    text-align: center;
+  }
 
 /* Your existing styles */
 
@@ -64,22 +70,28 @@ body {
 
 /* Example custom styles for the carousel */
 .carousel {
-    max-width: 600px; /* Adjust based on your needs */
-    margin: auto; /* Center the carousel */
-  }
-  
-  .carousel-item img {
-    height: 400px; /* Adjust based on your needs */
-    object-fit: cover; /* Ensure photos cover the slide area without distortion */
-    width: 100%; /* Ensure images stretch to the full width of the carousel item */
-    transition: none; /* Disable transitions */
-    transform: none; /* Disable transformations */
-  }
-  
+    max-width: 90%; /* Responsive max width */
+    margin: 20px auto; /* Center the carousel and add some vertical spacing */
+    overflow: hidden; /* Prevents any overflow from the images */
+}
 
-  .carousel-item {
-    transition: opacity 0.5s ease-in-out;
-  }
+.carousel-item img {
+    height: 50%; /* Increased height for better display */
+    object-fit: cover; /* Cover the area of the carousel item without distorting aspect ratio */
+    width: 50%; /* Full width of the carousel item */
+}
+
+.carousel-item {
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for the carousel items */
+}
+
+@media (max-width: 768px) { /* Adjustments for smaller devices */
+    .carousel-item img {
+        height: 300px; /* Smaller height for smaller devices */
+    }
+}
+
+
   
   
 

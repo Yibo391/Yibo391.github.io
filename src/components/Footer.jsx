@@ -1,5 +1,5 @@
 import React from 'react';
-import './main.css'; // Import the custom CSS for styling and animation
+import '../styles/main.css'; // Correct path to CSS file in styles directory
 
 const Footer = () => {
   return (
