@@ -1,0 +1,12 @@
+/* PhotoCarousel.css */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Scoped CSS for PhotoCarousel only */
+#photoCarousel .carousel-item img {
+    max-width: 100%;
+    height: auto; /* Example of making sure it doesn't affect layout elsewhere */
+}

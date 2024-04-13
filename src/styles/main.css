@@ -1,97 +1,78 @@
-/* Ensure html and body elements take up the full height of the viewport */
-html,
-body {
-    height: 100%;
+/* main.css - Global styles */
+html, body {
+    height: 100%; /* Ensures that the HTML and body tags take up the full height of the viewport */
     margin: 0;
+    padding: 0;
 }
-
 
 #root {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-  }
-
-
-/* Set up the main .App container to use flexbox and grow to fill available space */
-.App {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    /* Use Viewport Height (vh) to ensure it fills the screen */
+    min-height: 100vh; /* This makes sure that the root element always takes at least the height of the viewport */
 }
 
-/* Additional styles for the footer if it's not already centered and styled */
+.container {
+    flex-grow: 1; /* Allows the container to expand and fill the available space, pushing the footer down */
+}
+
 .footer {
-    margin-top: auto; /* Push the footer to the bottom of the layout */
-    background-color: #f8f9fa; /* Light grey background */
-    padding: 20px 0; /* Padding for aesthetic spacing */
+    position: static; /* Ensure footer is part of the normal document flow to stay at the bottom */
+    width: 100%;
     text-align: center;
-  }
-
-/* Your existing styles */
-
-
-
-/* App.css */
-.app-title {
-    color: #007bff;
-    /* Bootstrap primary blue, for consistency */
-    font-weight: bold;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow for depth */
 }
 
-/* Additional styles for your App can go here */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-@keyframes fadeInUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
+.btn {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+    color: #ffffff;
+}
+
+.mt-3 { margin-top: 1rem; }
+.mb-3 { margin-bottom: 1rem; }
+.my-5 { margin-top: 3rem; margin-bottom: 3rem; }
+.text-center { text-align: center; }
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
     }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        width: 100%;
+    }
+
+    .navbar li {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer {
+        padding: 10px 20px;
     }
 }
-
-.animated {
-    animation-name: fadeInUp;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    /* Keeps the element in the final state after animation completes */
-}
-
-/* Additional styling for the footer if needed */
-
-
-
-
-/* Example custom styles for the carousel */
-.carousel {
-    max-width: 90%; /* Responsive max width */
-    margin: 20px auto; /* Center the carousel and add some vertical spacing */
-    overflow: hidden; /* Prevents any overflow from the images */
-}
-
-.carousel-item img {
-    height: 50%; /* Increased height for better display */
-    object-fit: cover; /* Cover the area of the carousel item without distorting aspect ratio */
-    width: 50%; /* Full width of the carousel item */
-}
-
-.carousel-item {
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for the carousel items */
-}
-
-@media (max-width: 768px) { /* Adjustments for smaller devices */
-    .carousel-item img {
-        height: 300px; /* Smaller height for smaller devices */
-    }
-}
-
-
-  
-  
-

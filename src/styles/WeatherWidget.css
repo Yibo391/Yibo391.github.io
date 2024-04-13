@@ -25,3 +25,15 @@
     animation-duration: 1.5s;
   }
   
+  .weather-widget {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children */
+    justify-content: center; /* Center content vertically */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
