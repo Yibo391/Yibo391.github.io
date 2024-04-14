@@ -29,8 +29,16 @@ const Calculator = () => {
         setError(false);
     };
 
+    const containerStyle = {
+        marginTop: '1rem',
+        padding: '1rem',
+        border: '2px solid #dee2e6', // Set border color
+        borderRadius: '0.25rem', // Optional: adds rounded corners
+        boxShadow: '0 4px 6px rgba(0,0,0,0.1)' // Optional: adds shadow for depth
+    };
+
     return (
-        <div className="container mt-3">
+        <div className="container" style={containerStyle}>
             <h2 className="mb-3">Calculator</h2>
             <div className="input-group mb-3">
                 <input type="text" className="form-control text-right" value={current || "0"} readOnly />
