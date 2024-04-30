@@ -4,12 +4,12 @@
   "photos": "Photos",
   "todoList": "Todo List",
   "calculator": "Calculator",
-  "welcomeTitle": "Welcome to My Interactive Web Application",
-  "introText": "This application is meticulously crafted to demonstrate a seamless integration of cutting-edge web development technologies. It utilizes React, Vite, React Router, and React-i18next for internationalization, paired with robust CI/CD practices using GitHub Actions.",
-  "exploreFeatures": "Explore the key features of this application:",
-  "weatherWidgetDescription": "Leverages real-time API integration to fetch and display weather data based on the user's geolocation.",
-  "photoCarouselDescription": "Manages responsive media content, enhancing the visual experience for users.",
-  "todoListDescription": "Demonstrates dynamic state management and interactivity with React hooks.",
-  "calculatorDescription": "Offers basic arithmetic functions, showcasing practical implementation of user input handling and state updates.",
-  "projectConclusion": "Developed independently, this project not only highlights my technical skills in frontend development but also underscores my initiative and capability to create sophisticated, user-centric web applications. It stands as a dynamic portfolio piece designed for viewing by potential internship programs and technology mentors."
+  "welcomeTitle": "Welcome to My Web Application",
+  "introText": "This application showcases various web development technologies including React, Vite, React Router, and React-i18next. It also uses GitHub Actions for continuous integration and deployment.",
+  "exploreFeatures": "Explore the features of this application:",
+  "weatherWidgetDescription": "Displays current weather information based on the user's location using real-time API data.",
+  "photoCarouselDescription": "Features a responsive photo carousel to enhance user experience.",
+  "todoListDescription": "Includes a to-do list with dynamic state management using React hooks.",
+  "calculatorDescription": "Provides basic arithmetic functions through a simple calculator interface.",
+  "projectConclusion": "This project demonstrates my skills in frontend development and my ability to create user-focused web applications. It serves as a portfolio piece for internship applications and discussions with technology mentors."
 }

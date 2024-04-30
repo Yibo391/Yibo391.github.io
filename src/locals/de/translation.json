@@ -4,12 +4,12 @@
   "photos": "Fotos",
   "todoList": "Aufgabenliste",
   "calculator": "Rechner",
-  "welcomeTitle": "Willkommen bei meiner interaktiven Webanwendung",
-  "introText": "Diese Anwendung wurde sorgfältig entwickelt, um eine nahtlose Integration modernster Webentwicklungstechnologien zu demonstrieren. Sie nutzt React, Vite, React Router und React-i18next für die Internationalisierung, gepaart mit robusten CI/CD-Praktiken unter Verwendung von GitHub Actions.",
-  "exploreFeatures": "Entdecken Sie die Schlüsselfunktionen dieser Anwendung:",
-  "weatherWidgetDescription": "Nutzt Echtzeit-API-Integration, um Wetterdaten basierend auf dem geografischen Standort des Benutzers abzurufen und anzuzeigen.",
-  "photoCarouselDescription": "Verwaltet responsive Medieninhalte und verbessert das visuelle Erlebnis für die Benutzer.",
-  "todoListDescription": "Demonstriert dynamisches Zustandsmanagement und Interaktivität mit React Hooks.",
-  "calculatorDescription": "Bietet grundlegende Rechenfunktionen und zeigt die praktische Implementierung der Verarbeitung von Benutzereingaben und Zustandsaktualisierungen.",
-  "projectConclusion": "Dieses Projekt wurde unabhängig entwickelt und unterstreicht nicht nur meine technischen Fähigkeiten in der Frontend-Entwicklung, sondern auch meine Initiative und Fähigkeit, anspruchsvolle, benutzerzentrierte Webanwendungen zu erstellen. Es dient als dynamisches Portfolio-Stück, das für potenzielle Praktikumsprogramme und Technologiementoren konzipiert ist."
+  "welcomeTitle": "Willkommen bei meiner Webanwendung",
+  "introText": "Diese Anwendung demonstriert verschiedene Webentwicklungstechnologien, einschließlich React, Vite, React Router und React-i18next, zusammen mit kontinuierlicher Integration und Bereitstellung durch GitHub Actions.",
+  "exploreFeatures": "Entdecken Sie die Funktionen dieser Anwendung:",
+  "weatherWidgetDescription": "Zeigt aktuelle Wetterinformationen basierend auf dem Standort des Benutzers mithilfe von Echtzeit-API-Daten an.",
+  "photoCarouselDescription": "Bietet ein responsives Fotokarussell zur Verbesserung der Benutzererfahrung.",
+  "todoListDescription": "Beinhaltet eine Aufgabenliste mit dynamischer Zustandsverwaltung durch React Hooks.",
+  "calculatorDescription": "Bietet grundlegende arithmetische Funktionen über eine einfache Rechnerschnittstelle.",
+  "projectConclusion": "Dieses Projekt zeigt meine Fähigkeiten in der Frontendentwicklung und meine Fähigkeit, benutzerorientierte Webanwendungen zu erstellen. Es dient als Portfolio-Stück für Bewerbungen um Praktika und Gespräche mit Technologiementoren."
 }
