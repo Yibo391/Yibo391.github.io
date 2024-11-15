@@ -1,0 +1,70 @@
+/* src/components/Header.css */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 保持标题居中 */
+    padding:2em 0;
+    background-color: #f5f5f5; /* 背景颜色可根据需要调整 */
+  }
+  
+  .title {
+    position: relative;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #000;
+    bottom: -10px;
+    left: 25%;
+    transition: width 0.3s ease;
+  }
+  
+  .title:hover {
+    color: #007bff; /* 悬停时字体颜色变化 */
+  }
+  
+  .title:hover::after {
+    width: 70%; /* 悬停时下划线长度变化 */
+  }
+  
+  .nav {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    position: relative;
+    transition: color 0.3s ease;
+    cursor: pointer; /* 更改鼠标指针 */
+  }
+  
+  .nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #007bff;
+  }
+  
+  .nav a:hover::after {
+    width: 100%;
+  }
+  

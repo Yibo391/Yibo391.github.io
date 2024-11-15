@@ -1,38 +1,34 @@
+/* src/App.css */
+
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  /* text-align: center; */ /* 注释或删除全局居中对齐 */
+  padding: 0em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  padding: 4em 2em;
+  text-align: left !important; /* 为每个 section 添加左对齐 */
+  /* 设置最大宽度，保持内容不至于过宽 */
+  margin: 0 auto; /* 将 section 居中，但内部内容左对齐 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section:nth-of-type(even) {
+  background-color: #f0f0f0;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+  font-size: 1.2em;
+  color: #555;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  padding: 2em 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center; /* 保持 footer 内容居中 */
 }
